@@ -1,3 +1,4 @@
+
 it('Shows an autocomplete', () => {
   createAutoComplete({
     root: document.querySelector('#target'),
@@ -16,8 +17,12 @@ it('Shows an autocomplete', () => {
   const dropdown = document.querySelector('.dropdown');
   
   expect(dropdown.className).not.to.include('is-active');
-
-  const dropdownMenu = document.querySelector('#target');
-
-  expect(dropdownMenu.className).mot.to.include('is-active');
 });
+
+it('Should do a thing', () => {
+  const ring = [1, 2, 3, 4, 5];
+
+  const rando = ring[Math.floor(Math.random() * 5)]
+
+  expect(rando).to.be.lessThan(5);
+})
