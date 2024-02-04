@@ -4,8 +4,8 @@ it('Shows an autocomplete', () => {
     fetchData() {
       return [
         { Title: 'Avengers'},
-        { Title: 'Butthole'},
-        { Title: 'Cunt Tut'}
+        { Title: 'Spider Man'},
+        { Title: 'Dark Knight'}
       ];
     },
     renderOption(movie) {
@@ -14,6 +14,6 @@ it('Shows an autocomplete', () => {
   });
 
   const dropdown = document.querySelector('.dropdown');
-
+  
   expect(dropdown.className).not.to.include('is-active');
 });
